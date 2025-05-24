@@ -22,3 +22,11 @@ we  can use "auto" keyword in declaretion to avoid type conversion errors
 - auto i = 2; //int
 - audo d = 2.4 //double
 - auto z = sqrt(y) //the type of whatever sqrt(y) returns
+
+# Reference and Pointers
+Pointer stores the address of the variable. Syntex of defining a pointer is "char* p = &v".
+- p is character pointer.
+- '&' use to access address of the variable.
+
+Using the pointer is also quite simple, if you  use just p it will give the address, to access the value at the address use * with the p. (char x = *p)
+- Now varaible x of type char has character same as variable v. 

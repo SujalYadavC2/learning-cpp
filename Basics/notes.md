@@ -30,3 +30,7 @@ Pointer stores the address of the variable. Syntex of defining a pointer is "cha
 
 Using the pointer is also quite simple, if you  use just p it will give the address, to access the value at the address use * with the p. (char x = *p)
 - Now varaible x of type char has character same as variable v. 
+
+We can use reference in the declaretion like this "int& a = b". "a" refereing to the "b".
+- Benifit of this is that we do not need * to access the value.
+- We can not the the reference once it is initialized but we can where a pointer is pointing after it is declared.

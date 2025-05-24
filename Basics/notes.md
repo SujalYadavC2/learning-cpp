@@ -14,6 +14,7 @@ The differece between the two is quite simple:
 - int i1 = 7.2; //i1 becomes 7
 - int i2 {7.2}; //error: floating-point to integer conversion
 - int i3 = {7.2}; //error: floating-point to integer conversion
+
 So, the main point is if you do not want unwanted loss of information it is better to use {} for declaretion.
 we  can use "auto" keyword in declaretion to avoid type conversion errors
 - auto b = true; //bool

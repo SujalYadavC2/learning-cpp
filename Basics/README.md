@@ -34,3 +34,25 @@ Using the pointer is also quite simple, if you  use just p it will give the addr
 We can use reference in the declaretion like this "int& a = b". "a" refereing to the "b".
 - Benifit of this is that we do not need * to access the value.
 - We can not the the reference once it is initialized but we can where a pointer is pointing after it is declared.
+
+# Dynamic memory allocation
+It lets you request memory during runtime meaning when you do not know the required sizeat complie time or when memory must persist longer than a function's scope.
+## Operators
+- **new**: Allocates memory on the heap (for single object)
+- **delete**: Frees memory allocated with new
+- **new []**: Allocates memory for an array on the heap
+- **delete []**: Frees memory allocated for an array
+
+**Syntax**
+int* ptr = new int;
+*ptr = 42;
+...
+delete ptr;
+ptr = nullptr; //good practiceto avoid dangling pointers
+
+int size;
+std::cin >> size;
+int* arr = new int[size];
+...
+delete[] arr;
+arr = nullptr;

@@ -43,7 +43,7 @@ It lets you request memory during runtime meaning when you do not know the requi
 - **new []**: Allocates memory for an array on the heap
 - **delete []**: Frees memory allocated for an array
 
-**Syntax**
+**Syntax**<br>
 int* ptr = new int;
 *ptr = 42;
 ...

@@ -1,2 +1,2 @@
 # learning-cpp
-This is my learning ground.
+I am trying to learn C++

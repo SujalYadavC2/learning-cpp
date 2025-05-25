@@ -44,15 +44,15 @@ It lets you request memory during runtime meaning when you do not know the requi
 - **delete []**: Frees memory allocated for an array
 
 **Syntax**<br>
-int* ptr = new int;
-*ptr = 42;
-...
-delete ptr;
+int* ptr = new int;<br>
+*ptr = 42;<br>
+...<br>
+delete ptr;<br>
 ptr = nullptr; //good practiceto avoid dangling pointers
 
-int size;
-std::cin >> size;
-int* arr = new int[size];
-...
-delete[] arr;
+int size;<br>
+std::cin >> size;<br>
+int* arr = new int[size];<br>
+...<br>
+delete[] arr;<br>
 arr = nullptr;

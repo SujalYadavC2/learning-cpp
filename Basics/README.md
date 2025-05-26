@@ -1,3 +1,7 @@
+Declaretion means when you define a variable without allocating it memory (int num;)
+
+Initialization comes after you declare a variable, it allocates memory to the variable (int num = 5;). It is also call defination.
+
 - you need to declare variables before you use them.
 - always put ";" at the end of an expression.
 - "std::" use because those name are found in standard-library namespace. We can use "using namespace std" after #include statement to avoid writting std::, but if we are using multiple namspaces then it

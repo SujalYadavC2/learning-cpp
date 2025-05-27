@@ -71,7 +71,7 @@ int (*func_ptr)(double) = ConvertToInt;
 To give an example of my initial declaration:
 
 ```cpp
-int value = 40;
+int value = 40; // It is global variable
 int* func(double num) { return &value; }
 ```
 

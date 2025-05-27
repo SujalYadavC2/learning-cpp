@@ -67,3 +67,13 @@ To give an example:
 int ConvertToInt(double num) { return static_cast<int>(num); }
 int (*func_ptr)(double) = ConvertToInt;
 ```
+
+To give an example of my initial declaration:
+
+```cpp
+int value = 40;
+int* func(double num) { return &value; }
+```
+
+In this case function shoud return the address of the integer because a pointer need address.
+

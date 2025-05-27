@@ -30,5 +30,40 @@ char ch = 'a';
 char* const ptr = &ch;
 
 *ptr = 'b'; //allowed
-ptr = &another_char: Error: Cannot change pointer
+ptr = &another_char; //Error: Cannot change pointer
+```
+
+**A constant pointer to a constant char**
+
+Both our pointer and variable are constant.
+
+```cpp
+const char ch = 'a';
+const char* const ptr = ch;
+
+*ptr = 'b'; // Error: Cannot change ch
+ptr = &another_char; // Error: Cannot change pointer
+```
+
+**A pointer to a function taking a double parameter and returning an int**
+
+This is not a simple pointer to a varaible, it is a function pointer. I will tell the difference.<br>
+First code that I wrote was this:
+
+```cpp
+int* func(double);
+```
+
+But this declaration give us a pointer to the integer and that integer is output of the function.<br>
+So what we need is function pointer which looks something like this:
+
+```cpp
+int (*func_ptr)(double);
+```
+
+To give an example:
+
+```cpp
+int ConvertToInt(double num) { return static_cast<int>(num); }
+int (*func_ptr)(double) = ConvertToInt;
 ```

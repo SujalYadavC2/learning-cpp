@@ -8,3 +8,12 @@ Always ask question after reading a task. In this what is a pointer; A pointer s
 char ch = 'a';
 char *ptr = &ch;
 ```
+
+**A pointer to a constant char**
+
+Now our variable is a constant. But pointer is not a constant that means we can not modify our variable directly or through pointer, but pointer can change the address it points.
+
+```cpp
+const char ch = 'a';
+const char* ptr = &ch;
+```

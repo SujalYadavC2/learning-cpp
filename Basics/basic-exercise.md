@@ -77,3 +77,25 @@ int* func(double num) { return &value; }
 
 In this case function shoud return the address of the integer because a pointer need address.
 
+**A pointer to an array of 2 elements of type std:: string**
+
+Here we need to define pointer to an array. If we use this declaration
+
+```cpp
+std::string* ptr[2];
+```
+
+this means a array of two pointers not a pointer to an array of two elements.
+
+to correct this we need to write is like this
+
+```cpp
+std::string (*ptr)[2];
+```
+
+It is a pointer so it is initialize to a address of an already define array, something like this
+
+```cpp
+std::string arr {"Sujal", "Yadav"};
+std:string (*ptr)[2] = &arr;
+```

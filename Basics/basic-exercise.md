@@ -1,4 +1,4 @@
-# Declare and Initialize the following
+k# Declare and Initialize the following
 
 **A pointer to a char**
 

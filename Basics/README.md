@@ -1,6 +1,15 @@
-Declaretion means when you define a variable without allocating it memory (int num;)
+Declaretion means when you define a variable without allocating it memory.
 
-Initialization comes after you declare a variable, it allocates memory to the variable (int num = 5;). It is also call defination.
+```cpp
+int num;
+```
+
+Initialization comes after you declare a variable, it allocates memory to the variable
+```cpp
+int num {5};
+```
+
+It is also call defination.
 
 Assignment is when you change value of a variable after it declared.<br>
 int num;<br>

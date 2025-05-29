@@ -12,8 +12,10 @@ int num {5};
 It is also call defination.
 
 Assignment is when you change value of a variable after it declared.<br>
-int num;<br>
+```cpp
+int num;
 num = 2;
+```
 
 - you need to declare variables before you use them.
 - always put ";" at the end of an expression.
